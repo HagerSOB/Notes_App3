@@ -7,10 +7,14 @@ class AddNoteBttomSheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [
-        CustomTextField(hint: 'hajer',),
-      ],
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 12),
+      child: const Column(
+        children: [
+          SizedBox(height: 32,),
+          CustomTextField(hint: 'hajer',),
+        ],
+      ),
     );
   }
 }
