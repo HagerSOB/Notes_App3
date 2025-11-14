@@ -3,11 +3,11 @@ part of 'add_note_cubit.dart';
  abstract class NotesState{}
 
 class NotesInitial extends NotesState{}
-class NoteLoading extends NotesState {}
-class NoteSuccsses extends NotesState {}
-class NoteFailure extends NotesState {
+class AddNoteLoading extends NotesState {}
+class AddNoteSuccsses extends NotesState {}
+class AddNoteFailure extends NotesState {
  final String errMessage;
 
- NoteFailure(this.errMessage);
+ AddNoteFailure(this.errMessage);
 
 }
